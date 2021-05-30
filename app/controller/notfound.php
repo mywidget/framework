@@ -16,6 +16,6 @@ class NotFound extends SENE_Controller
     public function index()
     {
         header("HTTP/1.0 404 Not Found");
-        echo 'Notfound';
+        echo 'kosong';
     }
 }

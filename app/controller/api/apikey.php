@@ -114,6 +114,7 @@ class ApiKey extends SENE_Controller
       $data['status'] = 801;
       $data['message'] = 'invalid nation_code';
       $this->json->out($data);
+      exit();
     }
 
     $id = (int) $id;
@@ -121,6 +122,7 @@ class ApiKey extends SENE_Controller
       $data['status'] = 800;
       $data['message'] = 'invalid ID';
       $this->json->out($data);
+      exit();
     }
 
     $aakm = $this->aakm->getById($nation_code,$id);
